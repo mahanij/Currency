@@ -1,7 +1,13 @@
-let currencyType = prompt("What currency do you want to enter?")
+let currencyType = prompt("What currency do you want to exchange?")
 
-let eachHowManyRials = Number(prompt("How many rials is each " + currencyType + " ?"))
+let currencyTYpeSecond = prompt("do you want to convert the " + currencyType + " to?")
+
+let eachHowMany = Number(prompt("How many " + currencyTYpeSecond + "is each " + currencyType + " ?"))
 
 let howMuchcurrency = Number(prompt("How much of this currency do you have?"))
 
-alert("each " + currencyType + " = " + howMuchcurrency * eachHowManyRials + " rials")
+function detectore(x){
+    return(x * howMuchcurrency)
+}
+
+alert(detectore(eachHowMany))
